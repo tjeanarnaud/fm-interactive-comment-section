@@ -1,0 +1,15 @@
+.comment__form {
+  @apply mt-2 flex w-full flex-wrap  items-center justify-between gap-4 rounded-lg bg-white p-4 md:mt-3 md:items-start md:gap-4 md:p-6;
+}
+
+.comment__form .form__avatar {
+  @apply order-2 h-10 w-10 rounded-full object-cover md:order-1;
+}
+
+.comment__form .form__textarea {
+  @apply order-1 min-h-[96px] w-full flex-grow rounded-lg border border-light-gray px-6 py-2 outline-none focus:border-moderate-blue md:order-2 md:flex-1;
+}
+
+.comment__form .form__button {
+  @apply order-3 w-[104px];
+}

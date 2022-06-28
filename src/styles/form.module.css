@@ -1,0 +1,75 @@
+.form {
+  @apply space-y-6 p-8;
+}
+
+.form__title {
+  @apply text-center text-3xl font-extrabold text-dark-blue/90;
+}
+
+.form__text {
+  @apply text-center text-sm md:text-base;
+}
+
+.form__textLink {
+  @apply font-medium hover:text-moderate-blue;
+}
+
+.label {
+  @apply block text-sm font-medium text-dark-blue/90 sm:text-base;
+}
+
+.field {
+  @apply mt-1;
+}
+
+.field__input {
+  @apply block w-full appearance-none rounded-md border border-gray-300 px-3 py-[13px] text-sm placeholder-gray-400 shadow-sm focus:border-moderate-blue focus:outline-none focus:ring-moderate-blue md:py-[11px] md:text-base;
+}
+
+.separator {
+  @apply relative;
+}
+
+.separator__line {
+  @apply absolute inset-0 flex items-center;
+}
+
+.separator__border {
+  @apply w-full border-t border-gray-300;
+}
+
+.separator__text {
+  @apply relative flex justify-center;
+}
+
+.separator__textContent {
+  @apply bg-white px-2 text-gray-500;
+}
+
+.option {
+  @apply flex items-center justify-between;
+}
+
+.option__checkbox {
+  @apply flex items-center;
+}
+
+.checkbox__input {
+  @apply h-4 w-4 rounded border-gray-300 text-moderate-blue focus:ring-moderate-blue/95;
+}
+
+.checkbox__label {
+  @apply ml-2 block text-sm text-dark-blue/90 md:text-base;
+}
+
+.option__reset {
+  @apply text-sm md:text-base;
+}
+
+.reset__link {
+  @apply font-medium text-moderate-blue/90 hover:text-moderate-blue;
+}
+
+.button {
+  @apply w-full;
+}

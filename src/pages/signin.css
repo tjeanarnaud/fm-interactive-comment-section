@@ -1,0 +1,7 @@
+.signin {
+  @apply relative min-h-full w-full;
+}
+
+.signin__box {
+  @apply mx-auto mt-28 max-w-md rounded-lg bg-white shadow sm:mx-auto sm:w-full;
+}

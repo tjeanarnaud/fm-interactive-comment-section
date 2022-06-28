@@ -1,0 +1,68 @@
+.comment {
+  @apply grid w-full grid-flow-row auto-rows-max grid-cols-1;
+}
+
+.comment__card,
+.reply__card {
+  @apply grid w-full auto-cols-max grid-flow-row auto-rows-max gap-4 rounded-lg bg-white p-4 md:grid md:auto-cols-max md:grid-flow-row md:auto-rows-max md:content-start md:items-start md:gap-x-6 md:p-6;
+}
+
+.card__user {
+  @apply col-span-2 col-start-1 row-span-1 row-start-1 flex max-h-8 items-center gap-4 md:col-span-1 md:col-start-2 md:row-span-1 md:row-start-1;
+}
+
+.card__user .user__picture {
+  @apply h-8 w-8 rounded-full object-cover;
+}
+
+.card__user .user__username {
+  @apply font-medium leading-[19px] text-dark-blue;
+}
+
+.card__user .user__badge {
+  @apply grid h-[19px] w-9 place-items-center rounded-sm bg-moderate-blue text-[13px] font-medium leading-tight text-white;
+}
+
+.card__user .user__createdAt {
+  @apply font-normal leading-[19px];
+}
+
+.card__vote {
+  @apply col-span-1 col-start-1 row-span-1 row-start-3 md:col-span-1 md:col-start-1 md:row-span-2 md:row-start-1;
+}
+
+.card__action {
+  @apply col-span-1 col-start-2 row-span-1 row-start-3 justify-end md:col-span-1 md:col-start-3 md:row-span-1 md:row-start-1;
+}
+
+.card__form {
+  @apply order-2 flex max-w-[618px] flex-col items-end gap-4 md:col-span-2 md:col-start-2 md:row-span-1 md:row-start-2 md:min-h-[52px];
+}
+
+.card__form .form__input {
+  @apply w-full rounded-lg border border-light-gray px-6 py-2 outline-none focus:border-moderate-blue;
+}
+
+.card__form .form__button {
+  @apply w-[104px];
+}
+
+.card__content {
+  @apply col-span-2 col-start-1 w-[311px] sm:w-[576px] md:col-span-2 md:col-start-2 md:row-span-1 md:row-start-2 md:min-h-[52px] md:w-[586px];
+}
+
+.card__reply {
+  @apply ml-0 mt-4 flex flex-col space-y-4 border-l-2 border-light-gray pl-4 md:mt-6 md:ml-11 md:space-y-6 md:pl-11;
+}
+
+.card__reply .card__content {
+  @apply w-[292px] sm:w-[556px] md:w-[496px];
+}
+
+.card__reply .card__content span {
+  @apply font-medium text-moderate-blue;
+}
+
+.card__reply .card__form .form__input {
+  @apply md:w-[530px] md:max-w-[642px];
+}

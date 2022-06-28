@@ -1,0 +1,48 @@
+.app__nav {
+  @apply flex w-full items-center justify-between;
+}
+
+.app__nav .nav__user,
+.app__nav .nav__menu {
+  @apply flex items-center space-x-3 font-medium;
+}
+
+.app__nav .nav__menu .menu__item {
+  @apply hover:text-moderate-blue;
+}
+
+.app__nav .nav__user .user__picture {
+  @apply h-8 w-8 rounded-full object-cover sm:h-8 sm:w-8 md:h-10 md:w-10;
+}
+
+.app__comments {
+  @apply grid w-full grid-flow-row auto-rows-max grid-cols-1 gap-y-4 md:gap-y-6;
+}
+
+.app__form {
+  @apply w-full rounded-lg bg-white;
+}
+
+.app__form .form__create {
+  @apply flex w-full flex-wrap items-center justify-between gap-4 p-4 md:items-start md:gap-4 md:p-6;
+}
+
+.app__form .form__create .user__avatar {
+  @apply order-2 h-10 w-10 rounded-full md:order-1;
+}
+
+.app__form .form__create .create__input {
+  @apply order-1 min-h-[96px] w-full rounded-lg border border-light-gray px-6 py-2 outline-none focus:border-moderate-blue md:order-2 md:flex-1;
+}
+
+.app__form .form__create .create__button {
+  @apply order-3 w-[104px];
+}
+
+.app__form .form__signin {
+  @apply flex w-full items-center justify-center gap-6 p-10 md:p-16;
+}
+
+.app__form .form__signin .signin__button {
+  @apply px-5;
+}
