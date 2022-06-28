@@ -21,7 +21,6 @@ const firebaseConfig = {
 const app = !getApps().lenth ? initializeApp(firebaseConfig) : getApp()
 const auth = getAuth()
 const db = getFirestore()
-const storage = getStorage()
 const provider = new GoogleAuthProvider()
 
 export { app, auth, db, provider }
