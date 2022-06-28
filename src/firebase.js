@@ -9,12 +9,12 @@ import { getAuth, GoogleAuthProvider } from 'firebase/auth'
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: 'AIzaSyAYvdgXN_lZzruAsD9pzm6-y7SBQWA1s-A',
-  authDomain: 'fm-interactive-comments-1c5cc.firebaseapp.com',
-  projectId: 'fm-interactive-comments-1c5cc',
-  storageBucket: 'fm-interactive-comments-1c5cc.appspot.com',
+  apiKey: process.env.FIREBASE_API_KEY,
+  authDomain: process.env.FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.FIREBASE_PROJECT_ID,
+  storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
   messagingSenderId: '947470322318',
-  appId: '1:947470322318:web:84a073f7f677d4925e57df',
+  appId: process.env.FIREBASE_APP_ID,
   measurementId: 'G-T7Z9S5XDB4',
 }
 
