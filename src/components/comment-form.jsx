@@ -13,7 +13,7 @@ const CommentForm = ({ commentId, userImage, replyingTo, setIsReplying }) => {
   const createReply = async (e) => {
     e.preventDefault()
 
-    const docRef = await addDoc(collection(db, 'comments', commentId), {
+    await addDoc(collection(db, 'comments', commentId), {
       content: content.replace(`@${replyingTo} `, ''),
       replyingTo: replyingTo,
       score: 0,
