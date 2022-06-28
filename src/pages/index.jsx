@@ -47,7 +47,7 @@ const Home = () => {
   const createComment = async (e) => {
     e.preventDefault()
 
-    const docRef = await addDoc(collection(db, 'comments'), {
+    await addDoc(collection(db, 'comments'), {
       content: currentContent,
       score: 0,
       createdAt: serverTimestamp(),
